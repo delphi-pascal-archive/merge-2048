@@ -1,0 +1,46 @@
+object FrmMain: TFrmMain
+  Left = 299
+  Top = 125
+  Width = 208
+  Height = 234
+  HorzScrollBar.Visible = False
+  VertScrollBar.Visible = False
+  Caption = 'FrmMain'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -14
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnMouseMove = FormMouseMove
+  OnResize = FormResize
+  PixelsPerInch = 120
+  TextHeight = 16
+  object SgrGrid: TStringGrid
+    Left = 0
+    Top = 0
+    Width = 200
+    Height = 206
+    Align = alClient
+    BorderStyle = bsNone
+    ColCount = 4
+    Ctl3D = False
+    DefaultColWidth = 50
+    DefaultRowHeight = 50
+    Enabled = False
+    FixedCols = 0
+    RowCount = 4
+    FixedRows = 0
+    GridLineWidth = 5
+    ParentCtl3D = False
+    ScrollBars = ssNone
+    TabOrder = 0
+    OnDrawCell = SgrGridDrawCell
+  end
+end
